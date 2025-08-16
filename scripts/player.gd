@@ -22,9 +22,12 @@ const CROUCH_LERP_SPEED = 10.0
 const BUY_PHASE_DURATION = 25.0
 
 # --- Head Bob ---
-const BOB_FREQUENCY = 2.0
-const BOB_AMPLITUDE = 0.08
+const BOB_FREQUENCY = 0.0
+const BOB_AMPLITUDE = 0.00
 var bob_time = 0.0
+
+# Not sure why this would be here so I set the bob to 0 like every other tac-shooter :wink:
+# If we for some reason want head vertical mvt we should probably only do it on 3d model animations (but we probably shouldn't).
 
 # --- Physics ---
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
